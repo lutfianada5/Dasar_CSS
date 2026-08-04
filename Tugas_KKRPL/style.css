@@ -1,0 +1,49 @@
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Container utama menu (bingkai luar) */
+.menu-container {
+    width: 200px;
+    background-color: #316298;
+    border: 2px solid #234873;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Jarak antar tombol */
+    box-sizing: border-box;
+}
+
+/* Style dasar untuk setiap item link */
+.menu-container a {
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #376a9f;
+    border: 2px solid #28517c;
+    /* Efek inset bevel/3D sederhana */
+    box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.2), 
+                inset -1px -1px 2px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+}
+
+/* Warna khusus untuk link yang aktif/terpilih (PPLG) */
+.menu-container a.active {
+    color: #ffd700; /* Warna kuning emas */
+}
+
+/* Efek saat mouse diarahkan ke tombol */
+.menu-container a:hover {
+    background-color: #2e5b8a;
+    color: #ffd700;
+}
